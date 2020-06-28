@@ -54,8 +54,8 @@
    'y'mm in Y axis (front/back), and 'z'mm in Z axis (up/down). "
   [ortho? column]
   (if ortho?
-    (cond (= column 2)  [0   0    -6.5]
-          (>= column 4) [0   0     6]
+    (cond (= column 2)  [0   0    0]
+          (>= column 4) [0   0     0]
           :else         [0   0     0])
     (cond (= column 2)  [0   2.82 -6.5]
           (>= column 4) [0  -13    6]
@@ -68,7 +68,7 @@
    starts the row from the higher row (F row -> num row -> top row)
    and the homerow is number 3 from the last after thumb and bottom row."
   [nrows]
-  (- nrows 3))
+  (- nrows 2))
 
 (defn flastrow
   "Determines where the last row should be located at."
