@@ -101,15 +101,15 @@
   (render-file "json-help.html" {}))
 
 (defn manuform [_]
-  (render-file "manuform.html" {:column-curvature    (range 12 22)
-                                :tenting-angle       (range 15 6 -1)
+  (render-file "manuform.html" {:column-curvature    (range 12 26)
+                                :tenting-angle       (range 20 6 -1)
                                 :thumb-tenting-angle (range 24 15 -1)
                                 :height-offset       (range 4 16 2)}))
 
 (defn lightcycle [_]
-  (render-file "lightcycle.html" {:column-curvature       (range 12 22)
-                                  :tenting-angle          (range 12 6 -1)
-                                  :thumb-tenting-angle    (range 24 -24 -1)
+  (render-file "lightcycle.html" {:column-curvature       (range 12 26)
+                                  :tenting-angle          (range 20 6 -1)
+                                  :thumb-tenting-angle    (range 30 -24 -1)
                                   :thumb-column-curvature (range 36 8 -1)
                                   :thumb-row-curvature    (range 36 8 -1)
                                   :height-offset          (range 10 36 2)}))

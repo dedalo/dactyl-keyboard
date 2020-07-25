@@ -11,8 +11,8 @@
     "curve": {
         "alpha": 12,
         "beta": 36,
-        "centercol": 4,
-        "tenting": 15
+        "centercol": 3,
+        "tenting": 14
     },
     "connector": {
         "external": false,
@@ -23,13 +23,13 @@
         "hotswap": false,
         "stagger": false,
         "wide-pinky": false,
-        "height-offset": 14,
+        "height-offset": 20,
         "wire-post": false,
         "screw-inserts": true
     },
     "misc": {
         "keycaps": false,
-        "wrist-rest": true,
+        "wrist-rest": false,
         "integrated-wrist-rest": false,
         "right-side": true,
         "case": true

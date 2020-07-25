@@ -9,10 +9,10 @@
         "inner-column": false
     },
     "curve": {
-        "alpha": 12,
-        "beta": 36,
-        "centercol": 3,
-        "tenting": 14
+        "alpha": 25,
+        "beta": 34,
+        "centercol": 4,
+        "tenting": 20
     },
     "connector": {
         "external": false,
@@ -28,7 +28,7 @@
         "screw-inserts": true
     },
     "misc": {
-        "keycaps": false,
+        "keycaps": true,
         "wrist-rest": false,
         "integrated-wrist-rest": false,
         "right-side": false,

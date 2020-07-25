@@ -68,7 +68,7 @@
    starts the row from the higher row (F row -> num row -> top row)
    and the homerow is number 3 from the last after thumb and bottom row."
   [nrows]
-  (- nrows 2))
+  (- nrows 1))
 
 (defn flastrow
   "Determines where the last row should be located at."
@@ -415,7 +415,7 @@
   (union (cylinder [bottom-radius top-radius] height)
          (translate [0 0 (/ height 2)] (sphere top-radius))))
 
-(def screw-insert-height 3.8)
+(def screw-insert-height 9)
 (def screw-insert-bottom-radius (/ 5.31 2))
 (def screw-insert-top-radius (/ 5.1 2))
 

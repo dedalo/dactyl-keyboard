@@ -14,9 +14,9 @@
             </label>
             <fieldset name="keys" id="keys">
                 <label for="ncols">Number of columns (4 - 7)</label>
-                <input type="number" name="ncols" id="ncols" value=5 min="4" max="7">
+                <input type="number" name="ncols" id="ncols" value=7 min="4" max="7">
                 <label for="nrows">Number of rows (3 - 6)</label>
-                <input type="number" name="nrows" id="nrows" value=4 min="3" max="6">
+                <input type="number" name="nrows" id="nrows" value=5 min="3" max="6">
                 <label for="thumb-count">Thumb Key Count</label>
                 <select id="thumb-count" name="thumb-count">
                     <option value="six">6 (Default)</option>
@@ -29,12 +29,12 @@
                 <select id="last-row" name="last-row">
                     <option value="two">Two (Default Dactyl Manuform).</option>
                     <option value="zero">No last row.</option>
-                    <option value="full">Use all keys.</option>
+                    <option value="full" selected>Use all keys.</option>
                 </select>
                 <label for="switch-type">Key Hole</label>
                 <select id="switch-type" name="switch-type">
                     <option value="box">Box and MX</option>
-                    <option value="mx">MX</option>
+                    <option value="mx" selected>MX</option>
                     <option value="alps">Alps</option>
                 </select>
                 <label for="inner-column">Inner Column?</label>
@@ -56,11 +56,12 @@
                 <label for="beta">Row's Curvature</label>
                 <select id="beta" name="beta">
                     <option value=36>pi/36</option>
+                    <option value=34 selected>pi/34</option>
                     <option value=30>pi/30</option>
                 </select>
                 <label for="centecol">Center of the curvature for the column</label>
                 <select id="centercol" name="centercol">
-                    <option value=4>Pinky finger's column</option>
+                    <option value=4 selected>Pinky finger's column</option>
                     <option value=3>Ring finger's column</option>
                     <option value=2>Middle finger's column</option>
                     <option value=1>Index finger's column.</option>
@@ -83,7 +84,7 @@
                 </select>
                 <label for="trrs-connector">Connector</label>
                 <select id="trrs-connector" name="trrs-connector">
-                    <option value="false">RJ9</option>
+                    <option value="false" selected>RJ9</option>
                     <option value="true">TRRS</option>
                 </select>
                 <label for="usb-hole">USB Hole</label>
@@ -105,7 +106,7 @@
                 <label for="ortho">Stagger?</label>
                 <select id="ortho" name="ortho">
                     <option value="false">Yes</option>
-                    <option value="true">No</option>
+                    <option value="true" selected>No</option>
                 </select>
                 <label for="wide-pinky">Wide Pinky?</label>
                 <select id="wide-pinky" name="wide-pinky">
@@ -126,7 +127,7 @@
                 <label for="screw-inserts">Screw inserts</label>
                 <select id="screw-inserts" name="screw-inserts">
                     <option value="false">No screw inserts</option>
-                    <option value="true">Screw inserts</option>
+                    <option value="true" selected>Screw inserts</option>
                 </select>
             </fieldset>
             <label for="miscelania">
@@ -141,7 +142,7 @@
                 <label for="wrist-rest">Wrist Rest?</label>
                 <select id="wrist-rest" name="wrist-rest" onchange="toggle_wrist_rest_type_fields()">
                     <option value="true">Yes</option>
-                    <option value="false">No</option>
+                    <option value="false" selected>No</option>
                 </select>
                 <label for="integrated-wrist-rest">Integrated Wrist Rest?</label>
                 <select id="integrated-wrist-rest" name="integrated-wrist-rest"
